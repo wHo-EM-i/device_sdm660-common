@@ -239,7 +239,8 @@ ro.telephony.default_cdma_sub=0
 vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 
 # Rendering
-debug.egl.hw=1
+debug.hwui.renderer=skiagl
+debug.egl.hw=0
 debug.enable.sglscale=1
 debug.sf.disable_hwc=0
 debug.sf.gpu_comp_tiling=1
