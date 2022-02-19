@@ -130,6 +130,7 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     android.hardware.bluetooth.audio@2.1-impl \
     android.hardware.bluetooth@1.1.vendor \
+    android.hardware.bluetooth@1.0.vendor \
     bt_stack.conf \
     libbthost_if \
     libhdmiedid \
@@ -140,12 +141,14 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.device@3.5 \
+    android.hardware.camera.device@3.4:64 \
+    android.hardware.camera.device@3.5:64 \
+    android.hardware.camera.provider@2.4:64 \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
-    android.hardware.camera.provider@2.6 \
-    vendor.qti.hardware.camera.device@1.0 \
-    vendor.qti.hardware.camera.device@1.0.vendor
+    android.hardware.camera.provider@2.5:64 \
+    android.hardware.camera.provider@2.6:64 \
+    vendor.qti.hardware.camera.device@1.0:64
 
 PRODUCT_PACKAGES += \
     Camera2
@@ -172,6 +175,8 @@ PRODUCT_PACKAGES += \
 # Crypto
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.keymaster@4.1.vendor \
+    android.hardware.keymaster@4.0.vendor \
     android.hardware.keymaster@3.0.vendor
 
 # Dalvik
@@ -192,6 +197,7 @@ PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
     android.hardware.graphics.allocator@3.0-impl \
     android.hardware.graphics.allocator@4.0-impl \
+    android.hardware.graphics.composer@2.1-impl \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
@@ -232,7 +238,11 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.4-service.clearkey \
-    android.hardware.drm@1.4.vendor
+    android.hardware.drm@1.4.vendor \
+    android.hardware.drm@1.3.vendor \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.0.vendor
 
 # Freeform Multiwindow
 PRODUCT_COPY_FILES += \
@@ -505,12 +515,17 @@ PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor \
     android.hardware.radio@1.6 \
     android.hardware.radio@1.6.vendor \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio@1.4.vendor \
+    android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.config@1.3 \
     android.hardware.radio.config@1.3.vendor \
     android.hardware.radio.deprecated@1.0 \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.2 \
     android.hardware.secure_element@1.2.vendor \
+    android.hardware.secure_element@1.1.vendor \
+    android.hardware.secure_element@1.0.vendor \
     librmnetctl \
     libxml2 \
     libprotobuf-cpp-full \
@@ -590,8 +605,8 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
-    libdng_sdk.vendor_32 \
-    libstdc++.vendor_32  \
+    libdng_sdk.vendor \
+    libstdc++.vendor  \
     vndk-ext
 
 PRODUCT_COPY_FILES += \
