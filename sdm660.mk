@@ -370,6 +370,9 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(COMMON_PATH)/overlay
 
+PRODUCT_PACKAGES += \
+    SDM660Frameworks
+
 # RRO configuration
 TARGET_USES_RRO := true
 
