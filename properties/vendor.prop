@@ -165,7 +165,6 @@ media.stagefright.enable-aac=true
 media.aac_51_output_enabled=true
 mm.enable.smoothstreaming=true
 vidc.enc.target_support_bframe=1
-vendor.mm.enable.qcom_parser=13631487
 vendor.video.disable.ubwc=1
 ro.media.recorder-max-base-layer-fps=60
 

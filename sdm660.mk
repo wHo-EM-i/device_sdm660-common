@@ -297,6 +297,7 @@ PRODUCT_PACKAGES += \
 
 # QTI common
 TARGET_COMMON_QTI_COMPONENTS := \
+    av \
     bt \
     telephony
 
@@ -343,7 +344,6 @@ PRODUCT_PACKAGES += \
 # OMX
 PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.0.vendor \
-    libavservices_minijail \
     libavservices_minijail.vendor \
     libc2dcolorconvert \
     libhypv_intercept \
