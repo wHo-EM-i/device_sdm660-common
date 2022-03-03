@@ -77,8 +77,6 @@ vendor/lib64/libhdmipassthru.so|f6e46857a65a39214a09838f1b37a82926a485c6
 vendor/lib64/libqtigef.so|cdbc8eb095afddd0f990c972cd8c1b2b4e7e9cd7
 
 # Audio FX modules - from S62Pro RKQ1.210406.002
-system_ext/etc/permissions/audiosphere.xml|015ad7be4921039238bfa3d34d052d752453e49c
--system_ext/framework/audiosphere.jar|9c28317f12b93a6d881c80a991ff24716fce4a12
 vendor/lib/soundfx/libasphere.so|90940fca6f4b84794046513c6c6868eca9470066
 vendor/lib/soundfx/libqcbassboost.so|8e92c5d40cd23f503840b055d71336e4c9daecc0
 vendor/lib/soundfx/libqcreverb.so|7e05f1f4bdd2947dac3aefd871437d289581078b
@@ -446,14 +444,12 @@ vendor/lib/libgcs-calwrapper.so|a80d1d6b0b6e76083b0ca98d690c5cb46e113904
 vendor/lib/libgcs-ipc.so|177f711fc9e01970ef17e9f8a79776ef31d8c973
 vendor/lib/libgcs-osal.so|413c0b9b767d8aa1da477f89b162d5b13604e0cf
 vendor/lib/libgcs.so|136b036d645ce31c3265cf2aed00c472ecec37e4
-vendor/lib/liblistensoundmodel2.so|375948b769905112429ae4fb2979be0b1e363950
 vendor/lib/libsmwrapper.so|0fbf611c9a597f7c70bfd2363dfc7f465d1dafd5
 vendor/lib64/hw/sound_trigger.primary.sdm660.so|7f93fbb078d8ed2b47ab57e68595a80916ce5f95
 vendor/lib64/libgcs-calwrapper.so|b091f07cced39887778d1c678de9d00a6b08a793
 vendor/lib64/libgcs-ipc.so|a999ffc3f4a711fb754f32a3c517d3a16ad0465a
 vendor/lib64/libgcs-osal.so|6563b261374b1cf54ce1eaf4eda4b98ea2a0ecd7
 vendor/lib64/libgcs.so|064ee3e7f9ddbb6ce12f06cbb044f090f7da7a6f
-vendor/lib64/liblistensoundmodel2.so|64d81867135372eb81110eaa5af3aaff180700db
 
 # Media - from S62Pro RKQ1.210406.002
 lib/libFileMux.so|22005fb1595b2b76e199b82ff3790c1bc3d54a20
