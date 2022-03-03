@@ -22,9 +22,6 @@ persist.vendor.camera.privapp.list=org.codeaurora.snapcam
 ro.charger.enable_suspend=true
 ro.charger.disable_init_blank=true
 
-# CNE
-persist.vendor.cne.feature=1
-
 # Data
 persist.data.df.dev_name=rmnet_usb0
 persist.vendor.data.profile_update=true
@@ -53,8 +50,6 @@ ro.max.fling_velocity=20000
 ro.com.google.ime.kb_pad_port_b=1
 
 # IMS
-persist.dbg.volte_avail_ovr=1
-persist.dbg.vt_avail_ovr=1
 persist.vendor.ims.disableUserAgent=0
 
 # LMKD
@@ -83,7 +78,6 @@ gsm.proximity.enable=true
 persist.timed.enable=true
 
 # Radio
-DEVICE_PROVISIONED=1
 persist.backup.ntpServer=0.pool.ntp.org
 persist.radio.aosp_usr_pref_sel=true
 persist.radio.add_power_save=1
@@ -95,10 +89,6 @@ persist.vendor.radio.enable_temp_dds=true
 persist.vendor.radio.force_on_dc=true
 persist.vendor.radio.mt_sms_ack=30
 persist.sys.fflag.override.settings_provider_model=false
-persist.sys.fflag.override.settings_network_and_internet_v2=true
-ril.subscription.types=RUIM,NV
-ro.telephony.default_network=33,33
-telephony.lteOnCdmaDevice=1
 
 # SELinux
 ro.build.selinux=1

@@ -192,7 +192,6 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/properties/vendor.prop
 
 # RIL
 PROTOBUF_SUPPORTED := true
-ENABLE_VENDOR_RIL_SERVICE := true
 
 # SELinux
 include device/qcom/sepolicy-legacy/SEPolicy.mk
