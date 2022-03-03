@@ -10,7 +10,6 @@ ro.config.vc_call_vol_steps=7
 persist.bluetooth.a2dp_offload.disabled=false
 persist.vendor.bt.a2dp.aac_whitelist=false
 ro.bluetooth.a2dp_offload.supported=true
-ro.bluetooth.library_name=libbluetooth_qti.so
 
 # Blur
 ro.surface_flinger.supports_background_blur=0
