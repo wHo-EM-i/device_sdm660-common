@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Board
+TARGET_BOARD_PLATFORM := sdm660
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
@@ -121,6 +124,14 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_audio@2.1.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
+
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.device@3.5 \
+    android.hardware.camera.provider@2.4-impl \
+    android.hardware.camera.provider@2.4-service \
+    android.hardware.camera.provider@2.6 \
+    vendor.qti.hardware.camera.device@1.0
 
 # Cgroup
 PRODUCT_COPY_FILES += \
