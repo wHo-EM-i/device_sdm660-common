@@ -122,10 +122,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
 
-# Cgroup and task_profiles
+# Cgroup
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
-    $(COMMON_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
+    $(COMMON_PATH)/configs/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json
 
 # Codec2 modules
 PRODUCT_PACKAGES += \
@@ -280,14 +279,22 @@ endif
 PRODUCT_PACKAGES += \
     libion
 
+# QTI Perf
+PRODUCT_PACKAGES += \
+    libtextclassifier_hash
+
 # QTI common
 TARGET_COMMON_QTI_COMPONENTS := \
     audio \
     av \
     bt \
+    perf \
     telephony \
     usb \
     vibrator
+
+PRODUCT_BOOT_JARS += \
+    QXPerformance
 
 # IRQ
 PRODUCT_COPY_FILES += \
@@ -332,7 +339,6 @@ PRODUCT_PACKAGES += \
 # OMX
 PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.0.vendor \
-    libavservices_minijail.vendor \
     libc2dcolorconvert \
     libhypv_intercept \
     libmm-omxcore \
