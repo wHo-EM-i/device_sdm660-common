@@ -1,4 +1,4 @@
-<manifest version="1.0" type="device" target-level="5">
+<manifest version="1.0" type="device" target-level="4">
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
@@ -78,7 +78,6 @@
         <name>android.hardware.sensors</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::ISensors/default</fqname>
-        <fqname>@1.0::ISensorManager/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.soundtrigger</name>
@@ -111,9 +110,9 @@
         <fqname>@2.0::ISupplicantVendor/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>com.qualcomm.qti.ant</name>
+        <name>com.dsi.ant</name>
         <transport>hwbinder</transport>
-        <fqname>@1.0::IAntHci/default</fqname>
+        <fqname>@1.0::IAnt/default</fqname>
     </hal>
     <hal format="hidl">
         <name>com.qualcomm.qti.dpm.api</name>
@@ -267,8 +266,8 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.uim_remote_client</name>
         <transport>hwbinder</transport>
-        <fqname>@1.2::IUimRemoteServiceClient/uimRemoteClient0</fqname>
-        <fqname>@1.2::IUimRemoteServiceClient/uimRemoteClient1</fqname>
+        <fqname>@1.0::IUimRemoteServiceClient/uimRemoteClient0</fqname>
+        <fqname>@1.0::IUimRemoteServiceClient/uimRemoteClient1</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.uim_remote_server</name>
@@ -300,15 +299,5 @@
         <name>vendor.qti.hardware.mwqemadapter</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IMwqemAdapter/MwqemAdapter</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.xiaomi.hardware.mlipay</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.1::IMlipayService/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.xiaomi.hardware.mfidoca</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IFidoService/default</fqname>
     </hal>
 </manifest>

@@ -355,9 +355,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(COMMON_PATH)/overlay \
-    $(COMMON_PATH)/overlay-awaken \
-    $(COMMON_PATH)/overlay-lineage
+    $(COMMON_PATH)/overlay
 
 # RRO configuration
 TARGET_USES_RRO := true
@@ -365,7 +363,7 @@ TARGET_USES_RRO := true
 # Overlay-Monet
 PRODUCT_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay-monet
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(COMMON_PATH)/overlay-monet/frameworks/base/packages/SystemUI
-    
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -406,20 +404,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.vulkan.version-1_0_3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version-1_0_3.xml \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
     frameworks/native/data/etc/android.hardware.ethernet.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.ethernet.xml
-
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service.xiaomi_sdm660-libperfmgr \
-    android.hardware.power.stats@1.0-service.mock
-
-# Powerhint
-ifeq ($(EAS_POWERHINT_VARIANT), sdm636)
-    PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/power-libperfmgr/sdm636_powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
-else
-    PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/power-libperfmgr/sdm660_powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
-endif
 
 # Preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
@@ -477,10 +461,6 @@ PRODUCT_PACKAGES += \
     rild \
     telephony-ext
 
-# RIL JAR
-PRODUCT_BOOT_JARS += \
-    telephony-ext
-
 # Seccomp policy
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/seccomp/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
@@ -504,9 +484,7 @@ BOOT_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(COMMON_PATH) \
-    hardware/google/interfaces \
-    hardware/google/pixel
+    $(COMMON_PATH)
 
 # Sqlite
 PRODUCT_PACKAGES += \
