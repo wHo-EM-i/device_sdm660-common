@@ -80,3 +80,5 @@
 
 # Video4linux sysfs nodes
 /sys/devices/platform/soc/caa0000\.qcom,jpeg/video4linux/video1(/.*)?                                                              u:object_r:sysfs_graphics:s0
+
+/sys/module/usb_f_qcrndis/parameters(/.*)?                                                              u:object_r:sysfs_usb_rndis:s0
